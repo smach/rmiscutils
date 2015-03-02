@@ -1,0 +1,11 @@
+Package: rmiscutils
+Type: Package
+Title: Collection of Misc R Functions I've Found useful Over the Years
+Version: 0.1
+Date: 2015-03-01
+Author: c(
+    person("Sharon", "Machlis", , "smachlis@computerworld.com", c("aut", "cre")),
+    )
+Description: This package is a collection of miscellaneous R functions I've either found or written over the years that I've found helpful.
+License: GPL-3
+LazyData: TRUE
