@@ -1,5 +1,6 @@
-#' Base R has toupper and tolower - why not toinitialcap?
+#' toinitialcap
 #'
+#' Base R has toupper and tolower - why not toinitialcap?
 #' This renames the example .simpleCap function in the toupper help file.
 #' @param mystring (any string)
 #' @keywords strings
