@@ -2,7 +2,7 @@
 % Please edit documentation in R/strings.R
 \name{toinitialcap}
 \alias{toinitialcap}
-\title{Base R has toupper and tolower - why not toinitialcap?}
+\title{toinitialcap}
 \usage{
 toinitialcap(mystring)
 }
@@ -10,6 +10,7 @@ toinitialcap(mystring)
 \item{mystring}{(any string)}
 }
 \description{
+Base R has toupper and tolower - why not toinitialcap?
 This renames the example .simpleCap function in the toupper help file.
 }
 \examples{

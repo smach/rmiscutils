@@ -9,14 +9,14 @@ vector.to.single.string(myvector, cr = 1)
 \arguments{
 \item{myvector}{A vector of character strings}
 
-\item{cr}{Number of line breaks after each element, defaults to 1
-keyword strings
-export
-examples
-vec <- c("Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun")
-vector.to.single.string(vec, 2)}
+\item{cr}{Number of line breaks after each element, defaults to 1}
 }
 \description{
 This function takes a vector of character strings and turns it into a single string.
 }
+\examples{
+vec <- c("Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun")
+vector.to.single.string(vec, 2)
+}
+\keyword{strings}
 

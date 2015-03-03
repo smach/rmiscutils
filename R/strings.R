@@ -19,9 +19,9 @@ toinitialcap <- function(mystring){
 #' This function takes a vector of character strings and turns it into a single string.
 #' @param myvector A vector of character strings
 #' @param cr Number of line breaks after each element, defaults to 1
-#' keyword strings
-#' export
-#' examples
+#' @keywords strings
+#' @export
+#' @examples
 #' vec <- c("Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun")
 #' vector.to.single.string(vec, 2)
 
