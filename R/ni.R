@@ -1,6 +1,6 @@
 #'
 #' Base R has the \%in\% function to see if one object is contained within another object.
-#' Why not %ni% to see if one object is NOT contained within another?
+#' Why not \%ni\% to see if one object is NOT contained within another?
 #' Idea from stackoverflow
 #' http://stackoverflow.com/questions/11302985/match-with-negation
 #'
