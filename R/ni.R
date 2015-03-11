@@ -1,4 +1,3 @@
-#' %ni%
 #'
 #' Base R has %in% to see if one object is contained within another object.
 #' Why not %ni% to see if one object is NOT contained within another?

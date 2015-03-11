@@ -30,6 +30,7 @@ vector.to.single.string <- function(myvector, cr=1){
   carriagereturns <- rep("\n", cr)
   carriagereturns <- paste(carriagereturns, collapse="")
   mystring <- paste(myvector, collapse=carriagereturns)
-
+  return(mystring)
 }
+
 

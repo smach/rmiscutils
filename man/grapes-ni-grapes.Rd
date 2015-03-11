@@ -2,7 +2,10 @@
 % Please edit documentation in R/ni.R
 \name{\%ni\%}
 \alias{\%ni\%}
-\title{%ni%}
+\title{Base R has %in% to see if one object is contained within another object.
+Why not %ni% to see if one object is NOT contained within another?
+Idea from stackoverflow
+http://stackoverflow.com/questions/11302985/match-with-negation}
 \usage{
 ... \%ni\% NA
 }

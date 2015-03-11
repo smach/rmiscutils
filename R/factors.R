@@ -9,6 +9,6 @@
 
 
 strings.to.ordered.factors <- function(myvector){
-  factor(myvector, levels = unique(myvector), ordered=TRUE)
-
+  myanswer <- factor(myvector, levels = unique(myvector), ordered=TRUE)
+  return(myanswer)
 }
