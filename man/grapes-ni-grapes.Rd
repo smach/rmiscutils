@@ -10,7 +10,7 @@ http://stackoverflow.com/questions/11302985/match-with-negation}
 ... \%ni\% NA
 }
 \arguments{
-\item{myobject}{(a vector)}
+\item{myobject}{a vector}
 }
 \description{
 Base R has the \%in\% function to see if one object is contained within another object.

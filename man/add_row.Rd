@@ -2,15 +2,19 @@
 % Please edit documentation in R/add_row.R
 \name{add_row}
 \alias{add_row}
-\title{add_row}
+\title{add_row Add one row of data to a data frame}
 \usage{
 add_row(mydf, ...)
 }
 \arguments{
-\item{mydf,}{mylist (a data frame and a list)}
+\item{mydf}{A data frame to which you'd like to add a row}
+
+\item{...}{Additional arguments in the format colname=value}
 }
 \description{
-How to elegantly add one row to a data frame, similar to SQL INSERT INTO. Maintain same class as original data frame.
+Easily add one row to a data frame when columns are not all of one class, when you have the format colname1 = value1, colname2 = value2, etc. Similar to SQL INSERT INTO. Maintains same class as original data frame. Any missing values will be changed to NA.
+}
+\details{
 WARNING: THIS IS STILL A WORK IN PROGRESS!!!
 }
 \examples{

@@ -4,7 +4,7 @@
 #' Idea from stackoverflow
 #' http://stackoverflow.com/questions/11302985/match-with-negation
 #'
-#' @param myobject (a vector)
+#' @param myobject a vector
 #' @keywords function
 #' @export
 #' @examples
