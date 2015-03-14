@@ -14,7 +14,7 @@ toinitialcap <- function(mystring){
           sep = "", collapse = " ")
 }
 
-#' vector.to.single.string
+#' vector_to_single_string
 #'
 #' This function takes a vector of character strings and turns it into a single string.
 #' @param myvector A vector of character strings
@@ -23,10 +23,10 @@ toinitialcap <- function(mystring){
 #' @export
 #' @examples
 #' vec <- c("Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun")
-#' vector.to.single.string(vec, 2)
+#' vector_to_single_string(vec, 2)
 
 
-vector.to.single.string <- function(myvector, cr=1){
+vector_to_single_string <- function(myvector, cr=1){
   carriagereturns <- rep("\n", cr)
   carriagereturns <- paste(carriagereturns, collapse="")
   mystring <- paste(myvector, collapse=carriagereturns)
