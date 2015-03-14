@@ -1,3 +1,4 @@
+#' "Not in" function
 #'
 #' Base R has the \%in\% function to see if one object is contained within another object.
 #' Why not \%ni\% to see if one object is NOT contained within another?
@@ -12,3 +13,5 @@
 #' # TRUE
 #'
 '%ni%' <- Negate('%in%')
+
+

@@ -39,6 +39,8 @@ Thanks to Jennifer Bryan for that function idea.
 
 *numbers_with_commas()* -- easily turn character strings containing numbers with commas into numbers.
 
+*toinitialcap()* -- to go along with base R's tolower() and toupper(), capitalizes the first letter of each word in a string.
+
 To see a complete list of available function and links to their help files, run
 
 ```{r, eval = FALSE}
