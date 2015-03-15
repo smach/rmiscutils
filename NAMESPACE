@@ -3,6 +3,8 @@
 export("%ni%")
 export(add_row)
 export(add_row_from_list)
+export(getparty)
+export(getpres)
 export(number_with_commas)
 export(strings.to.ordered.factors)
 export(toinitialcap)
