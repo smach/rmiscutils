@@ -16,12 +16,12 @@ knitr::opts_chunk$set(
 
 This package will be a collection of simple R functions that I've either written or discovered over the years that I've found useful and like to re-use. 
 
-WARNING: I have just started working on it AND THIS IS STILL A WORK IN PROGRESS. THESE HAVE NOT BEEN FULLY TESTED FOR PRODUCTION USE BY ME, LET ALONE FOR ANYONE ELSE'S USE.
+Caution: This is still a work in progress.
 
 To install, you need to have the devtools package on your system (if you don't have it, install that with install.packages("devtools") ) and then run
 
 ```{r, eval = FALSE}
-devtools::install_github("smach/rmiscutils.R")
+devtools::install_github("smach/rmiscutils")
 ```
 Functions include:
 

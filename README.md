@@ -1,12 +1,12 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 This package will be a collection of simple R functions that I've either written or discovered over the years that I've found useful and like to re-use.
 
-WARNING: I have just started working on it AND THIS IS STILL A WORK IN PROGRESS. THESE HAVE NOT BEEN FULLY TESTED FOR PRODUCTION USE BY ME, LET ALONE FOR ANYONE ELSE'S USE.
+Caution: This is still a work in progress.
 
 To install, you need to have the devtools package on your system (if you don't have it, install that with install.packages("devtools") ) and then run
 
 ``` r
-devtools::install_github("smach/rmiscutils.R")
+devtools::install_github("smach/rmiscutils")
 ```
 
 Functions include:
@@ -29,7 +29,9 @@ Thanks to Jennifer Bryan for that function idea.
 
 *numbers\_with\_commas()* -- easily turn character strings containing numbers with commas into numbers.
 
-*toinitialcap()* -- to go along with base R's tolower() and toupper(), capitalizes the first letter of each word in a string.
+*toinitialcap()* -- to go along with base R's tolower() and toupper(), capitalizes the first letter of each word in a string. Note: base R 3.2.0 now has tools::toTitleCase() function.
+
+*strings.to.ordered.factors()* -- turn a vector of character strings into an ordered factor, keeping the original order. Helpful if x-axis order is important when visualizing data.
 
 To see a complete list of available function and links to their help files, run
 

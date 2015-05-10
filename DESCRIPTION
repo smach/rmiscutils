@@ -1,7 +1,7 @@
 Package: rmiscutils
 Type: Package
 Title: Collection of Misc R Functions I've Found useful Over the Years
-Version: 0.1
+Version: 0.2
 Date: 2015-03-01
 Author: c(
     person("Sharon", "Machlis", , "smachlis@computerworld.com", c("aut", "cre")),
