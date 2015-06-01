@@ -27,6 +27,8 @@ add_row_from_list(iris, list(5.1, 3.5, 1.4, 0.2, "setosa"))
 
 Thanks to Jennifer Bryan for that function idea.
 
+*mymode* -- calculates the statistical mode of a vector, which base R oddly does not do.
+
 *numbers\_with\_commas()* -- easily turn character strings containing numbers with commas into numbers.
 
 *toinitialcap()* -- to go along with base R's tolower() and toupper(), capitalizes the first letter of each word in a string. Note: base R 3.2.0 now has tools::toTitleCase() function.
