@@ -13,3 +13,17 @@ unlibrary <- function(pkgname){
 
 }
 
+
+#' read_textfile
+#'
+#' Read a text file into a variable as a single character string
+#'
+#' @export
+#' @param filename name of a file as a character string in quotation marks
+#' @examples
+#' mystring <- read_textfile("myfile.txt")
+#'
+read_textfile <- function(filename){
+  mystring <- readChar(filename, file.info(filename)$size)
+  return(mystring)
+}
