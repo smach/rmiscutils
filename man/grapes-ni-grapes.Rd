@@ -10,8 +10,8 @@
 \item{myobject}{a vector}
 }
 \description{
-Base R has the \%in\% function to see if one object is contained within another object.
-Why not \%ni\% to see if one object is NOT contained within another?
+Base R has the \%in\% function to create a logical vector whether one object is contained within another object.
+Why not \%ni\% to get a logical vector if one object is NOT contained within another?
 Idea from stackoverflow
 http://stackoverflow.com/questions/11302985/match-with-negation
 }
