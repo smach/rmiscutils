@@ -27,3 +27,22 @@ read_textfile <- function(filename){
   mystring <- readChar(filename, file.info(filename)$size)
   return(mystring)
 }
+
+#' setindex_bygroup
+#'
+#' Create an auto-indexing column in a data frame grouped by an id column, with the index starting at 1 for each id column group.
+#'
+#' @export
+#' @param mydf a data frame
+#' @param mycolnum Number of the id column for your data frame
+#' @examples
+#' id <- c(1,1,2,2,2,3,4,4,5,5)
+#' cat <- c("A", "B", "A", "B", "C", "B", "C", "D", "A", "E")
+#' mydataframe <- data.frame(id, cat)
+#' mydataframe$step <- setindex_bygroup(mydataframe, 1)
+#'
+
+setindex_bygroup <- function(mydf, mycolnum){
+  ave(1:nrow(mydf), factor(mydf[,mycolnum]), FUN=function(x) 1:length(x) )
+}
+
