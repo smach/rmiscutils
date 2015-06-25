@@ -46,3 +46,17 @@ setindex_bygroup <- function(mydf, mycolnum){
   ave(1:nrow(mydf), factor(mydf[,mycolnum]), FUN=function(x) 1:length(x) )
 }
 
+#' na2zero
+#'
+#' Turn all the NA values in a data frame to zero.
+#'
+#' @export
+#' @param mydf a data frame
+#' @examples
+#' newdf <- na2zero(mydf)
+#'
+na2zero <- function(mydf){
+  mydf[is.na(mydf)] <- 0
+  return(mydf)
+}
+
