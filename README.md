@@ -33,7 +33,7 @@ Thanks to Jennifer Bryan for that function idea.
 
 *numbers\_with\_commas* -- easily turn character strings containing numbers with commas into numbers.
 
-*read\_textfile*
+*read\_textfile* -- read a text file into an R variable as a single character string.
 
 *toinitialcap* -- to go along with base R's tolower() and toupper(), capitalizes the first letter of each word in a string. Note: base R 3.2.0 now has tools::toTitleCase() function.
 
