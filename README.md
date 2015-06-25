@@ -11,15 +11,15 @@ devtools::install_github("smach/rmiscutils")
 
 Functions include:
 
-*add\_row()* -- add a row to a dataframe with the format
+*add\_row* -- add a row to a dataframe with the format
 
 ``` r
- add_row(mtcars, cyl = 4, disp = 7)
+ add_row(mydf, col1 = 4, col2 = 7, col3="A")
 ```
 
 Thanks to Hadely Wickham for that function idea.
 
-*add\_row\_from\_list()* -- add a row to a dataframe with the format
+*add\_row\_from\_list* -- add a row to a dataframe with the format
 
 ``` r
 add_row_from_list(iris, list(5.1, 3.5, 1.4, 0.2, "setosa"))
@@ -31,11 +31,11 @@ Thanks to Jennifer Bryan for that function idea.
 
 *na2zero* -- turn all NA values in a data frame to zeroes.
 
-*numbers\_with\_commas()* -- easily turn character strings containing numbers with commas into numbers.
+*numbers\_with\_commas* -- easily turn character strings containing numbers with commas into numbers.
 
-*toinitialcap()* -- to go along with base R's tolower() and toupper(), capitalizes the first letter of each word in a string. Note: base R 3.2.0 now has tools::toTitleCase() function.
+*toinitialcap* -- to go along with base R's tolower() and toupper(), capitalizes the first letter of each word in a string. Note: base R 3.2.0 now has tools::toTitleCase() function.
 
-*strings.to.ordered.factors()* -- turn a vector of character strings into an ordered factor, keeping the original order. Helpful if x-axis order is important when visualizing data.
+*strings.to.ordered.factors* -- turn a vector of character strings into an ordered factor, keeping the original order. Helpful if x-axis order is important when visualizing data.
 
 *unlibrary* -- because it can be difficult to remember that detach("package:mypackagename", unload=TRUE) or unloadNamespace("mypackagename") are the opposites of library("mypackagename").
 

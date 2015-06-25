@@ -1,4 +1,4 @@
-#' strings.to.ordered.factors
+#' strings_to_ordered_factors
 #'
 #' Turn a vector of strings into a factors while keeping the existing order of elements in the vector, instead of having them automatically alphabetized.
 #' @keywords ordered factors
@@ -9,7 +9,7 @@
 #' ordered_months_as_factors <- strings.to.ordered.factors(mymonths)
 
 
-strings.to.ordered.factors <- function(myvector){
+strings_to_ordered_factors <- function(myvector){
   myanswer <- factor(myvector, levels = unique(myvector), ordered=TRUE)
   return(myanswer)
 }
