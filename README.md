@@ -31,6 +31,8 @@ Thanks to Jennifer Bryan for that function idea.
 
 *na2zero* -- turn all NA values in a data frame to zeroes.
 
+*na2zero2* -- turns only NA values to zeroes in data frame columns that are numeric or integers. Uses for loops, so may be slow for large data frames.
+
 *numbers\_with\_commas* -- easily turn character strings containing numbers with commas into numbers.
 
 *read\_textfile* -- read a text file into an R variable as a single character string.

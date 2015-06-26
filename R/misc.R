@@ -60,3 +60,30 @@ na2zero <- function(mydf){
   return(mydf)
 }
 
+
+#' na2zero2
+#'
+#' Turn all the NA values in a data frame to zero but only in columns that are numeric or integers. Uses for loops, so may be slow for large data frames.
+#'
+#' @export
+#' @param mydf a data frame
+#' @examples
+#'
+#' x1 <- c(5,7,NA,9,10)
+#' x2 <- c(2.4, 7, 6.4, NA,5.2)
+#' x3 <- c(NA, "A", "B", "C", "D")
+#' x <- data.frame(x1,x2,x3)
+#' newdf <- na2zero2(x)
+#'
+
+na2zero2 <- function(mydf){
+  for(i in 1:nrow(mydf)){
+    for(j in 1:ncol(mydf)){
+      if(is.na(mydf[i,j]) && (is.numeric(mydf[,j]) || is.integer(mydf[,j]))){
+        mydf[i,j] <- 0
+      }
+    }
+  }
+  return(mydf)
+}
+
