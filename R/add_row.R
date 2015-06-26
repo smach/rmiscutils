@@ -36,6 +36,7 @@ add_row <- function(mydf, ...){
   for(eachcol in allCols ){
   mydf[newrownum, eachcol] <- ifelse(eachcol %in% definedCols, newrowdata[eachcol], NA)
   }
+  return(mydf)
 }
 
 
