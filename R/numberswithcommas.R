@@ -11,7 +11,7 @@
 
 number_with_commas <- function(mynumstring){
   x <- gsub(",", "", mynumstring)
-  x <- gsub("\\$", "", mynumstring)
+  x <- gsub("\\$", "", x)
   myanswer <- as.numeric(x)
   return(myanswer)
 }
