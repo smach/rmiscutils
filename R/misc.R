@@ -10,9 +10,21 @@
 #'
 unlibrary <- function(pkgname){
   unloadNamespace(pkgname)
-
 }
 
+
+#' getOS
+#'
+#' Wrapper to see what operating system is running
+#'
+#' @keywords environment
+#' @export
+#' @examples
+#' getOS()
+#'
+getOS <- function(){
+  Sys.info()['sysname']
+}
 
 #' read_textfile
 #'
@@ -86,4 +98,5 @@ na2zero2 <- function(mydf){
   }
   return(mydf)
 }
+
 
