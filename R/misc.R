@@ -26,6 +26,21 @@ getOS <- function(){
   Sys.info()['sysname']
 }
 
+
+#' table_sorted
+#'
+#' Get a frequency table from a vector of categorical variables sorted by frequency in descending order
+#'
+#' @export
+#' @examples
+#' myvec <- c("white", "blue", "purple", "white", "blue", "blue", "blue", "purple", "yellow", "white")
+#' table_sorted(myvec)
+
+
+table_sorted <- function(myvector){
+  sort(table(myvector), decreasing = TRUE)
+}
+
 #' read_textfile
 #'
 #' Read a text file into a variable as a single character string

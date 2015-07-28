@@ -41,6 +41,8 @@ Thanks to Jennifer Bryan for that function idea.
 
 *strings\_to\_ordered\_factors* -- turn a vector of character strings into an ordered factor, keeping the original order. Helpful if x-axis order is important when visualizing data.
 
+*table\_sorted* -- get frequency table sorted by frequency descending.
+
 *unlibrary* -- because it can be difficult to remember that detach("package:mypackagename", unload=TRUE) or unloadNamespace("mypackagename") are the opposites of library("mypackagename").
 
 To see a complete list of available function and links to their help files, run
