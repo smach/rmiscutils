@@ -1,5 +1,5 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-This package is a collection of simple R functions that I've either written or discovered over the years that I've found useful and like to re-use. In some cases, these functions are just thin wrappers around other functions but the syntax is easier for me to remember.
+This package is a collection of simple R functions I've either written or discovered over the years which I've found useful and like to re-use. In some cases, these functions are just thin wrappers around other functions but the syntax is easier for me to remember.
 
 This is still a work in progress.
 
@@ -38,6 +38,8 @@ Thanks to Jennifer Bryan for that function idea.
 *read\_textfile* -- read a text file into an R variable as a single character string.
 
 *toinitialcap* -- to go along with base R's tolower() and toupper(), capitalizes the first letter of each word in a string. Note: base R 3.2.0 now has tools::toTitleCase() function.
+
+*streaks* -- find winning (or other) streaks in a vector of data, slightly modified function from [Exploring Baseball Data with R](https://baseballwithr.wordpress.com/2014/07/07/team-streaks-part-i-2/).
 
 *strings\_to\_ordered\_factors* -- turn a vector of character strings into an ordered factor, keeping the original order. Helpful if x-axis order is important when visualizing data.
 
