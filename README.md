@@ -27,6 +27,8 @@ add_row_from_list(iris, list(5.1, 3.5, 1.4, 0.2, "setosa"))
 
 Thanks to Jennifer Bryan for that function idea.
 
+*maxn* -- finds the nth-highest number in a vector. dplyr's top_n does this generally, but maxn() can be used with apply() across rows. From [kohske on StackOverflow](http://stackoverflow.com/questions/10296866/finding-the-column-number-and-value-the-of-second-highest-value-in-a-row/10297025#10297025).
+
 *mymode* -- calculates the statistical mode of a vector, which base R oddly does not do.
 
 *na2zero* -- turn all NA values in a data frame to zeroes.
