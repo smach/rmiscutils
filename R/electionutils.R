@@ -1,6 +1,6 @@
 #' findwinner
 #'
-#' This function finds the top vote-getter in a csv or Excel election results file - it looks for the largest number in each row and creates a new column with the name of the winner (more specifically, the column name with the maximum value for each row). Requires rio package.
+#' This function finds the top vote-getter in a csv or Excel election results file - it looks for the largest number in each row and creates a new column with the name of the winner(s) (more specifically, the column name with the maximum value for each row). Accounts for ties. Requires rio package.
 #'
 #' Results file must have candidate results in adjoining columns, in a format with each candidate having their own column of results. findwinner function arguments: filename (string), datacolstart (number of data column where results data starts; 2 for column B in Excel, for example), datacolstop (number of the last dat…
 #'
@@ -17,17 +17,21 @@
 #' mydata <- findwinner("results.xlsx", 2, 4)
 #' }
 #'
-findwinner <- function(filename, datacolstart, datacolstop, exportcsv=TRUE){
-  if(!require("rio"))install.packages("rio")
+findwinner <- function (filename, datacolstart, datacolstop, exportcsv = TRUE)
+{
   data <- rio::import(filename)
-  data$WinnerColumnNumber <- apply(data[,datacolstart:datacolstop], 1, (which.max)) + (datacolstart-1)
-  data$Winner <- names(data)[data$WinnerColumnNumber]
-  data$WinnerColumnNumber <- NULL
-  if(exportcsv){
+  for(i in 1:nrow(data)){
+    ranks <- rank(data[i,2:7])
+    maxrank <- as.numeric(max(ranks))
+    data$max[i] <- maxrank
+    winners <- names(ranks[ranks==maxrank])
+    data$Winners[i] <- paste(winners, collapse = ", ")
+  }
+
+  if (exportcsv) {
     filename_root <- strsplit(filename, "\\.")[[1]][1]
     filename_with_winner <- paste0(filename_root, "_winners.csv")
     rio::export(data, filename_with_winner)
   }
-
   return(data)
 }

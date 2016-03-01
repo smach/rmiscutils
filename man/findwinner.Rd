@@ -19,7 +19,7 @@ findwinner(filename, datacolstart, datacolstop, exportcsv = TRUE)
 dataframe
 }
 \description{
-This function finds the top vote-getter in a csv or Excel election results file - it looks for the largest number in each row and creates a new column with the name of the winner (more specifically, the column name with the maximum value for each row). Requires rio package.
+This function finds the top vote-getter in a csv or Excel election results file - it looks for the largest number in each row and creates a new column with the name of the winner(s) (more specifically, the column name with the maximum value for each row). Accounts for ties. Requires rio package.
 }
 \details{
 Results file must have candidate results in adjoining columns, in a format with each candidate having their own column of results. findwinner function arguments: filename (string), datacolstart (number of data column where results data starts; 2 for column B in Excel, for example), datacolstop (number of the last dat…
