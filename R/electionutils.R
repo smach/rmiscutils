@@ -19,7 +19,7 @@
 #'
 findwinner <- function(filename, datacolstart, datacolstop, exportcsv=TRUE){
   if(!require("rio"))install.packages("rio")
-  data <- rio::import("test.xlsx")
+  data <- rio::import(filename)
   data$WinnerColumnNumber <- apply(data[,datacolstart:datacolstop], 1, (which.max)) + (datacolstart-1)
   data$Winner <- names(data)[data$WinnerColumnNumber]
   data$WinnerColumnNumber <- NULL
