@@ -25,6 +25,8 @@ Thanks to Hadely Wickham for that function idea.
 add_row_from_list(iris, list(5.1, 3.5, 1.4, 0.2, "setosa"))
 ```
 
+*findwinner* -- finds the largest value in each row of a spreadsheet of election results and creates a new column with the candidate (column) name of that largest value.
+
 Thanks to Jennifer Bryan for that function idea.
 
 *maxn* -- finds the nth-highest number in a vector. dplyr's top_n does this generally, but maxn() can be used with apply() across rows. From [kohske on StackOverflow](http://stackoverflow.com/questions/10296866/finding-the-column-number-and-value-the-of-second-highest-value-in-a-row/10297025#10297025).

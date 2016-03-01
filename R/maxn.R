@@ -19,9 +19,9 @@
 #' secondhighest <- mydata[max2(mydata)]
 #'
 #' # To find second-highest number in each row in a dataframe:
-#' #' #'\dontrun{
+#' \dontrun{
 #'  apply(df, 1, function(x)x[maxn(2)(x)])
-#'
+#' }
 #'
 #'
 maxn <- function(n){
