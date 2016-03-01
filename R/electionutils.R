@@ -21,7 +21,7 @@ findwinner <- function (filename, datacolstart, datacolstop, exportcsv = TRUE)
 {
   data <- rio::import(filename)
   for(i in 1:nrow(data)){
-    ranks <- rank(data[i,2:7])
+    ranks <- rank(data[i,datacolstart:datacolstop])
     maxrank <- as.numeric(max(ranks))
     winners <- names(ranks[ranks==maxrank])
     data$Winners[i] <- paste(winners, collapse = ", ")
