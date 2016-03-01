@@ -23,7 +23,6 @@ findwinner <- function (filename, datacolstart, datacolstop, exportcsv = TRUE)
   for(i in 1:nrow(data)){
     ranks <- rank(data[i,2:7])
     maxrank <- as.numeric(max(ranks))
-    data$max[i] <- maxrank
     winners <- names(ranks[ranks==maxrank])
     data$Winners[i] <- paste(winners, collapse = ", ")
   }
