@@ -7,7 +7,7 @@
 findwinner(filename, datacolstart, datacolstop, exportcsv = TRUE)
 }
 \arguments{
-\item{filename}{string name of file, either spreadsheet or csv, including extension and file path if not in your working directory}
+\item{filename}{string name of file, either spreadsheet or csv, including extension and file path if not in your working directory. If name does not include ".csv", ".tsv", ".xlsx", ".xls", or ".ods", function assumes that you want to use the name of a data frame that already exists in your working environment.}
 
 \item{datacolstart}{integer number of the column where the results data starts. If data starts in column B of an Excel spreadsheet, for example, datacolstart should be 2.}
 
