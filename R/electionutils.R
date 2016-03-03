@@ -23,7 +23,7 @@ findwinner <- function (filename, datacolstart, datacolstop, exportcsv = TRUE)
   if(grepl(matches, filename)){
     data <- rio::import(filename)
   } else {
-    data <- filename
+    data <- eval(parse(text = filename))
   }
 
   for(i in 1:nrow(data)){
