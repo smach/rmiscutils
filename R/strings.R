@@ -56,3 +56,23 @@ copy_textfile_to_clipboard <- function(mytextfile) {
 
 
 
+
+#' string2varname
+#'
+#' This function takes a string and turns it into a variable name.
+#' Code from John Ramey at http://johnramey.net/blog/2010/12/28/converting-a-string-to-a-variable-name-on-the-fly-and-vice-versa-in-r/
+#'
+#' @param x string
+#'
+#' @return variable name
+#' @export
+#'
+#' @examples
+#'
+#' x <- 42
+#' eval(parse(text = "x"))
+#' # [1] 42
+#'
+string2varname <- function(x){
+  eval(parse(text = "x"))
+}
