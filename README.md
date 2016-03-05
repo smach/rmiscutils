@@ -1,5 +1,5 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-This package is a collection of simple R functions I've either written or discovered over the years which I've found useful and like to re-use. In some cases, these functions are just thin wrappers around other functions but the syntax is easier for me to remember.
+This package is a collection of simple R functions that I've either written or discovered over the years that I've found useful and like to re-use. In some cases, these functions are just thin wrappers around other functions but the syntax is easier for me to remember.
 
 This is still a work in progress.
 
@@ -25,11 +25,7 @@ Thanks to Hadely Wickham for that function idea.
 add_row_from_list(iris, list(5.1, 3.5, 1.4, 0.2, "setosa"))
 ```
 
-*findwinner* -- finds the largest value in each row of a spreadsheet of election results and creates a new column with the candidate (column) name of that largest value.
-
 Thanks to Jennifer Bryan for that function idea.
-
-*maxn* -- finds the nth-highest number in a vector. dplyr's top_n does this generally, but maxn() can be used with apply() across rows. From [kohske on StackOverflow](http://stackoverflow.com/questions/10296866/finding-the-column-number-and-value-the-of-second-highest-value-in-a-row/10297025#10297025).
 
 *mymode* -- calculates the statistical mode of a vector, which base R oddly does not do.
 
@@ -50,6 +46,8 @@ Thanks to Jennifer Bryan for that function idea.
 *table\_sorted* -- get frequency table sorted by frequency descending.
 
 *unlibrary* -- because it can be difficult to remember that detach("package:mypackagename", unload=TRUE) or unloadNamespace("mypackagename") are the opposites of library("mypackagename").
+
+*varname2string* -- takes string and returns value of an object with that name (there's also string2varname, which does the reverse)
 
 To see a complete list of available function and links to their help files, run
 

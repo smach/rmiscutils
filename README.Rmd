@@ -57,6 +57,8 @@ Thanks to Jennifer Bryan for that function idea.
 
 *unlibrary* -- because it can be difficult to remember that  detach("package:mypackagename", unload=TRUE) or unloadNamespace("mypackagename") are the opposites of library("mypackagename").
 
+*varname2string* -- takes string and returns value of an object with that name (there's also string2varname, which does the reverse)
+
 To see a complete list of available function and links to their help files, run
 
 ```{r, eval = FALSE}
