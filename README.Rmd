@@ -47,6 +47,8 @@ Thanks to Jennifer Bryan for that function idea.
 
 *read_textfile* -- read a text file into an R variable as a single character string.
 
+*renamecol* -- rename a single column in a dataframe using format renamecol(mydf, oldcolname, newcolname)
+
 *toinitialcap* -- to go along with base R's tolower() and toupper(), capitalizes the first letter of each word in a string. Note: base R 3.2.0 now has tools::toTitleCase() function.
 
 *streaks* -- find winning (or other) streaks in a vector of data, slightly modified function from [Exploring Baseball Data with R](https://baseballwithr.wordpress.com/2014/07/07/team-streaks-part-i-2/).
