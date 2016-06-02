@@ -2,11 +2,7 @@
 % Please edit documentation in R/renamecol.R
 \name{renamecol}
 \alias{renamecol}
-\title{renamecol
-This function is a wrapper for the more cumbersome base R syntax
-colnames(mydf)[colnames(mydf) == 'oldcolname'] <- 'newcolname'
-because I also find it difficult to remember that I could also use
-mydf <- dplyr::rename(mydf,c('foo'='samples'))}
+\title{renamecol}
 \usage{
 renamecol(mydf, oldcolname, newcolname)
 }
@@ -21,7 +17,6 @@ renamecol(mydf, oldcolname, newcolname)
 dataframe
 }
 \description{
-renamecol
 This function is a wrapper for the more cumbersome base R syntax
 colnames(mydf)[colnames(mydf) == 'oldcolname'] <- 'newcolname'
 because I also find it difficult to remember that I could also use

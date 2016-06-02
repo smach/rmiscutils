@@ -1,4 +1,5 @@
 #' renamecol
+#'
 #' This function is a wrapper for the more cumbersome base R syntax
 #' colnames(mydf)[colnames(mydf) == 'oldcolname'] <- 'newcolname'
 #' because I also find it difficult to remember that I could also use
