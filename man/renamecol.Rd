@@ -19,8 +19,8 @@ dataframe
 \description{
 This function is a wrapper for the more cumbersome base R syntax
 colnames(mydf)[colnames(mydf) == 'oldcolname'] <- 'newcolname'
-because I also find it difficult to remember that I could also use
-mydf <- dplyr::rename(mydf,c('foo'='samples'))
+or the function
+dplyr::rename(mydf,c('foo'='samples'))
 }
 \examples{
 new_mtcars <- renamecol(mtcars, "mpg", "MPG")
