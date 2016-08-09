@@ -55,6 +55,32 @@ read_textfile <- function(filename){
   return(mystring)
 }
 
+
+
+
+#' write_textfile
+#'
+#' Write a variable with one or more character strings to a text file taken from this stackoverflow answer http://stackoverflow.com/a/2470277/718150
+#'
+#' @param myvar Variable that holds character string data
+#' @param myfilename string Name of the file
+#'
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#'  write_textfile(mydata, "myfile.txt")
+#'}
+
+write_textfile <- function(myvar, myfilename){
+  fileConn<-file(myfilename)
+  writeLines(myvar, fileConn)
+  close(fileConn)
+
+}
+
+
+
 #' setindex_bygroup
 #'
 #' Create an auto-indexing column in a data frame grouped by an id column, with the index starting at 1 for each id column group.

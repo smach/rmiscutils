@@ -51,6 +51,8 @@ Thanks to Jennifer Bryan for that function idea.
 
 *varname2string* -- takes string and returns value of an object with that name (there's also string2varname, which does the reverse)
 
+*write\_textfile* -- write an object containing character string data to a text file.
+
 To see a complete list of available function and links to their help files, run
 
 ``` r
