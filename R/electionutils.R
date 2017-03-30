@@ -30,7 +30,7 @@ findwinner <- function (filename, datacolstart, datacolstop, exportcsv = TRUE)
     ranks <- rank(data[i,datacolstart:datacolstop])
     maxrank <- as.numeric(max(ranks))
     winners <- names(ranks[ranks==maxrank])
-    data$Winners[i] <- paste(winners, collapse = ", ")
+    data$Winner[i] <- paste(winners, collapse = ", ")
   }
 
   if (exportcsv) {
