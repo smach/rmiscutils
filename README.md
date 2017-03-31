@@ -11,6 +11,8 @@ devtools::install_github("smach/rmiscutils")
 
 Functions include:
 
+*add\_pct\_cols\_to\_dataframe* -- designed for election results, will calculate percentages from selected columns by row and add new columns with that data.
+
 *add\_row* -- add a row to a dataframe with the format
 
 ``` r
