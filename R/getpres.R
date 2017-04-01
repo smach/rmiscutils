@@ -22,12 +22,12 @@ getpres <- function(thedate){
                    as.Date("1981-01-20"),
                    as.Date("1989-01-20"),
                    as.Date("1993-01-20"),
-                   as.Date("2001-01-01"),
-                   as.Date("2009-01-01"),
-                   as.Date("2016-01-20")),
+                   as.Date("2001-01-20"),
+                   as.Date("2009-01-20"),
+                   as.Date("2017-01-20")),
                  labels=c("Truman","Eisenhower", "Kennedy", "Johnson",
                           "Nixon", "Ford", "Carter", "Reagan", "George HW Bush",
-                          "Clinton", "George W Bush", "Obama"), right=F)
+                          "Clinton", "George W Bush", "Obama", "Trump"), right=F)
 
   return(as.character(thepres))
 
