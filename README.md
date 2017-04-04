@@ -41,7 +41,7 @@ Thanks to Jennifer Bryan for that function idea.
 
 *renamecol* -- rename a single column in a dataframe using format renamecol(mydf, oldcolname, newcolname)
 
-*removecolsAllNA* -- remove columns from a data frame where all values are NA. Useful when importing spreadsheets or CSV files where there are some empty columns.
+*removecolsAllNA* -- remove columns from a data frame where *all* values are NA. Useful when importing spreadsheets or CSV files where there are some empty columns.
 
 *toinitialcap* -- to go along with base R's tolower() and toupper(), capitalizes the first letter of each word in a string. Note: base R 3.2.0 now has tools::toTitleCase() function.
 
