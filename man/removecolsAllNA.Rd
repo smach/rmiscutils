@@ -13,8 +13,7 @@ removecolsAllNA(mydf)
 data frame
 }
 \description{
-This function removes "empty" data frame columns where all the values are NA
-It is a wrapper for this excellent StackOverflow answer http://stackoverflow.com/a/15968937/718150
+This function removes "empty" data frame columns where all the values are NA. It is a wrapper for this excellent StackOverflow answer http://stackoverflow.com/a/15968937/718150
 }
 \examples{
 Cat <- c("CatA", "CatB", "CatC")

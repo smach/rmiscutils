@@ -1,7 +1,6 @@
 #' removecolsAllNA
 #'
-#' This function removes "empty" data frame columns where all the values are NA
-#' It is a wrapper for this excellent StackOverflow answer http://stackoverflow.com/a/15968937/718150
+#' This function removes "empty" data frame columns where all the values are NA. It is a wrapper for this excellent StackOverflow answer http://stackoverflow.com/a/15968937/718150
 #'
 #' @param mydf - data frame
 #'
