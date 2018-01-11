@@ -17,4 +17,3 @@ unlibrary(devtools)
 
 }
 \keyword{environment}
-

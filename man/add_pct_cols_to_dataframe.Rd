@@ -30,4 +30,3 @@ mydf <- data.frame(City, Yes, No)
 mydf$Total <- mydf$Yes + mydf$No
 
 }
-

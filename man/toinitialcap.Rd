@@ -17,4 +17,3 @@ This renames the example .simpleCap function in the toupper help file.
 toinitialcap("this is a headline")
 }
 \keyword{strings}
-

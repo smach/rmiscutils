@@ -25,4 +25,3 @@ add_row_from_list(iris, list(5.1, 3.5, 1.4, 0.2, "setosa"))
 
 }
 \keyword{dataframes}
-

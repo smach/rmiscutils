@@ -22,4 +22,3 @@ myvector <- c(100, 98, 97.5, 102, 96, 96.5, 97, 94, 92.3, 93, 95, 91, 89, 88, 88
 my7dayavg <- rollingavg(myvector)
 
 }
-

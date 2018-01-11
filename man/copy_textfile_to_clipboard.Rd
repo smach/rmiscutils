@@ -17,4 +17,3 @@ myfile <- "data/textfile.txt"
 copy_textfile_to_clipboard(myfile)
 }
 \keyword{clipboard}
-

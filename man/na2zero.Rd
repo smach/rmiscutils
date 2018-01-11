@@ -16,4 +16,3 @@ Turn all the NA values in a data frame to zero.
 newdf <- na2zero(mydf)
 
 }
-

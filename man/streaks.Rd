@@ -22,4 +22,3 @@ seasonrecord <- c("Win", "Win", "Win", "Loss", "Loss", "Win", "Tie", "Win", "Win
 streaks(seasonrecord, "Win", "Loss")
 }
 \keyword{baseball}
-

@@ -16,4 +16,3 @@ Read a text file into a variable as a single character string
 mystring <- read_textfile("myfile.txt")
 
 }
-

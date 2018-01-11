@@ -22,4 +22,3 @@ varname2string(x)
 # [1] "x"
 
 }
-

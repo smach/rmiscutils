@@ -30,4 +30,3 @@ mydata <- findwinner("results.xlsx", 2, 4)
 }
 
 }
-

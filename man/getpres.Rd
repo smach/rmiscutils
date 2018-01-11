@@ -18,4 +18,3 @@ Input a date object on or after 1945-04-12 and get the name of the US president 
 \examples{
 getpres(as.Date("2000-01-01"))
 }
-

@@ -21,4 +21,3 @@ mydataframe <- data.frame(id, cat)
 mydataframe$step <- setindex_bygroup(mydataframe, 1)
 
 }
-

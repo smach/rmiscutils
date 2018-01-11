@@ -32,4 +32,3 @@ secondhighest <- mydata[max2(mydata)]
 
 
 }
-

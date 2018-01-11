@@ -21,4 +21,3 @@ x <- data.frame(x1,x2,x3)
 newdf <- na2zero2(x)
 
 }
-

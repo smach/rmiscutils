@@ -21,4 +21,3 @@ http://stackoverflow.com/questions/11302985/match-with-negation
 
 }
 \keyword{function}
-

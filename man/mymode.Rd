@@ -18,4 +18,3 @@ themode <- mymode(salaries)
 
 
 }
-

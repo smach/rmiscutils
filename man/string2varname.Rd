@@ -22,4 +22,3 @@ eval(parse(text = "x"))
 # [1] 42
 
 }
-

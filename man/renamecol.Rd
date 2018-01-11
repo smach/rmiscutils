@@ -26,4 +26,3 @@ dplyr::rename(mydf,c('foo'='samples'))
 new_mtcars <- renamecol(mtcars, "mpg", "MPG")
 
 }
-

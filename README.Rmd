@@ -23,7 +23,73 @@ To install, you need to have the devtools package on your system (if you don't h
 ```{r, eval = FALSE}
 devtools::install_github("smach/rmiscutils")
 ```
-Functions include:
+
+Some of the tasks that functions in this package accomplish:
+
+
+Add a row to a dataframe with the format
+```{r, eval = FALSE}
+ add_row(mydf, col1 = 4, col2 = 7, col3="A")
+```
+`add_row`
+
+Add a row to a dataframe with the format
+```{r, eval = FALSE}
+add_row_from_list(iris, list(5.1, 3.5, 1.4, 0.2, "setosa"))
+```
+`add_row_from_list`
+
+Calculate percentages from selected data frame columns by row, and add new columns with that data. Designed for election results. `add_pct_cols_to_dataframe`
+
+Calculate the statistical mode of a vector (which base R oddly does not do).
+`mymode`
+
+Capitalizes the first letter of each word in a string. (Note: base R 3.2.0 subsequently included the `tools::toTitleCase(`) function, but toinitialcap has the advantage of naming consistency with base R's `tolower` and `toupper`).
+`toinitialcap` -- to go along with base R's tolower() and toupper(), 
+
+Convert all NA values in a data frame to zeroes.
+`na2zero`
+
+Convert only NA values to zeroes in data frame columns that are numeric or integers. Uses for loops, so may be slow for large data frames.
+`na2zero2`
+
+Convert character strings containing numbers with commas into numbers.
+`numbers_with_commas`
+
+Convert a vector of character strings into an ordered factor, keeping the original order. Helpful if x-axis order is important when visualizing data. (Created before the forcats package).
+`strings_to_ordered_factors`
+
+Create a frequency table sorted by descending frequency. (Would probably use a version of `janitor::tabyl` today)
+`table_sorted`
+
+Find winning (or other) streaks in a vector of data. This is a slightly modified function from [Exploring Baseball Data with R](https://baseballwithr.wordpress.com/2014/07/07/team-streaks-part-i-2/).
+`streaks`
+
+Read a text file into an R variable as a single character string.
+`read_textfile`
+
+Rename a single data frame column using format `renamecol(mydf, oldcolname, newcolname)`
+`renamecol`
+
+Remove columns from a data frame where _all_ values are NA. Useful when importing spreadsheets or CSV files where there are some empty columns.
+`removecolsAllNA`
+
+Unload a package from current working session. Because it can be difficult to remember that  `detach("package:mypackagename", unload=TRUE)` or `unloadNamespace("mypackagename")` are the opposites of `library("mypackagename")`.
+`unlibrary`
+
+Write an object containing character string data to a text file.
+`write_textfile`
+
+From a character string, return the value of an object with that name (there's also string2varname, which does the reverse)
+`varname2string`
+
+To see a complete list of available function and links to their help files, run
+
+```{r, eval = FALSE}
+help(package = "rmiscutils")
+```
+
+Or, to list some of the package's functions by function name:
 
 *add_pct_cols_to_dataframe* -- designed for election results, will calculate percentages from selected columns by row and add new columns with that data. 
 

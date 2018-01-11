@@ -19,4 +19,3 @@ vec <- c("Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun")
 vector_to_single_string(vec, 2)
 }
 \keyword{strings}
-

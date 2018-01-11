@@ -19,4 +19,3 @@ Write a variable with one or more character strings to a text file taken from th
  write_textfile(mydata, "myfile.txt")
 }
 }
-

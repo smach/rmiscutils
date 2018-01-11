@@ -13,4 +13,3 @@ Get a frequency table from a vector of categorical variables sorted by frequency
 myvec <- c("white", "blue", "purple", "white", "blue", "blue", "blue", "purple", "yellow", "white")
 table_sorted(myvec)
 }
-

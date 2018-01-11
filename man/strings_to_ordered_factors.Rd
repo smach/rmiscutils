@@ -18,4 +18,3 @@ ordered_months_as_factors <- strings.to.ordered.factors(mymonths)
 }
 \keyword{factors}
 \keyword{ordered}
-

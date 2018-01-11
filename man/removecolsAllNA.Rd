@@ -24,4 +24,3 @@ thedf <- data.frame(Cat, Val1, Val2, Val3)
 newdf <- removecolsAllNA(thedf)
 
 }
-
