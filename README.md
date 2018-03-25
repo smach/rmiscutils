@@ -43,6 +43,8 @@ Convert a vector of character strings into an ordered factor, keeping the origin
 
 Create a frequency table sorted by descending frequency. (Would probably use a version of `janitor::tabyl` today) `table_sorted`
 
+Find winning candidates in a spreadsheet or data frame of election results. `elec_find_winner`
+
 Find winning (or other) streaks in a vector of data. This is a slightly modified function from [Exploring Baseball Data with R](https://baseballwithr.wordpress.com/2014/07/07/team-streaks-part-i-2/). `streaks`
 
 Read a text file into an R variable as a single character string. `read_textfile`

@@ -1,4 +1,4 @@
-#' findwinner
+#' find_winner
 #'
 #' This function finds the top vote-getter in a csv or Excel election results file - it looks for the largest number in each row and creates a new column with the name of the winner(s) (more specifically, the column name with the maximum value for each row). Accounts for ties. Requires rio package.
 #'
@@ -14,10 +14,10 @@
 #'
 #' @examples
 #' \dontrun{
-#' mydata <- findwinner("results.xlsx", 2, 4)
+#' mydata <- find_winner("results.xlsx", 2, 4)
 #' }
 #'
-findwinner <- function (filename, datacolstart, datacolstop, exportcsv = TRUE)
+elec_find_winner <- function (filename, datacolstart, datacolstop, exportcsv = TRUE)
 {
   matches <- "\\.csv|\\.tsv|\\.xlsx|\\.xls|\\.ods"
   if(grepl(matches, filename)){
@@ -25,6 +25,9 @@ findwinner <- function (filename, datacolstart, datacolstop, exportcsv = TRUE)
   } else {
     data <- eval(parse(text = filename))
   }
+
+  # Fix problems if tibble
+  data <- as.data.frame(data)
 
   for(i in 1:nrow(data)){
     ranks <- rank(data[i,datacolstart:datacolstop])
