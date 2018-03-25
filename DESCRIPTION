@@ -10,4 +10,5 @@ Description: This package is a collection of miscellaneous R functions I've
 License: GPL-3
 LazyData: TRUE
 RoxygenNote: 6.0.1
-Imports: rio
+Imports: rio,
+         readr

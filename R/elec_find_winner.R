@@ -19,8 +19,10 @@
 #'
 elec_find_winner <- function (filename, datacolstart, datacolstop, exportcsv = TRUE)
 {
-  matches <- "\\.csv|\\.tsv|\\.xlsx|\\.xls|\\.ods"
-  if(grepl(matches, filename)){
+  matches <- "\\.tsv|\\.xlsx|\\.xls|\\.ods"
+  if(grepl("\\.csv$", filename)){
+    data <- readr::read_csv(filename)
+  } else if(grepl(matches, filename)){
     data <- rio::import(filename)
   } else {
     data <- eval(parse(text = filename))
