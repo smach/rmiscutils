@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 This package is a collection of simple R functions that I've either written or discovered over the years that I've found useful and like to re-use. In some cases, these functions are just thin wrappers around other functions but the syntax is easier for me to remember.
 
-This is still a work in progress.
+This is a work in progress.
 
 To install, you need to have the devtools package on your system (if you don't have it, install that with install.packages("devtools") ) and then run
 
@@ -66,6 +66,8 @@ Find winning candidates in a spreadsheet or data frame of election results. `ele
 
 Find winning (or other) streaks in a vector of data. This is a slightly modified function from [Exploring Baseball Data with R](https://baseballwithr.wordpress.com/2014/07/07/team-streaks-part-i-2/).
 `streaks`
+
+Open the file that allows you to edit the RStudio drop-down list of projects. `edit_project_list()`
 
 Read a text file into an R variable as a single character string.
 `read_textfile`

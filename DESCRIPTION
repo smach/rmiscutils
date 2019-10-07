@@ -9,6 +9,7 @@ Description: This package is a collection of miscellaneous R functions I've
     either found or written over the years that I've found helpful.
 License: GPL-3
 LazyData: TRUE
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 Imports: rio,
-         readr
+         readr,
+         usethis
