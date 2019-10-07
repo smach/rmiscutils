@@ -13,7 +13,7 @@ edit_project_list(windrive = "C")
 action opens file
 }
 \description{
-Opens file for editing the RStudio drop-down project list so individual projects can be removed from the list.
+Opens file for editing the RStudio dropdown project list so individual projects can be removed from the list.
 }
 \examples{
 \dontrun{

@@ -67,7 +67,7 @@ Find winning candidates in a spreadsheet or data frame of election results. `ele
 Find winning (or other) streaks in a vector of data. This is a slightly modified function from [Exploring Baseball Data with R](https://baseballwithr.wordpress.com/2014/07/07/team-streaks-part-i-2/).
 `streaks`
 
-Open the file that allows you to edit the RStudio drop-down list of projects. `edit_project_list()`
+Open the file that allows you to edit the RStudio dropdown list of projects. `edit_project_list()`
 
 Read a text file into an R variable as a single character string.
 `read_textfile`
@@ -93,7 +93,7 @@ To see a complete list of available function and links to their help files, run
 help(package = "rmiscutils")
 ```
 
-Or, to list some of the package's functions by function name:
+## Some of the package's functions by function name:
 
 *add_pct_cols_to_dataframe* -- designed for election results, will calculate percentages from selected columns by row and add new columns with that data. 
 
@@ -108,6 +108,8 @@ Thanks to Hadely Wickham for that function idea.
 add_row_from_list(iris, list(5.1, 3.5, 1.4, 0.2, "setosa"))
 ```
 Thanks to Jennifer Bryan for that function idea.
+
+*edit_project_list* -- opens the file that controls RStudio's dropdown project list.
 
 *mymode* -- calculates the statistical mode of a vector, which base R oddly does not do.
 

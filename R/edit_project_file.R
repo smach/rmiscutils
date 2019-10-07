@@ -2,7 +2,7 @@
 
 #' Open file to edit RStudio project list
 #'
-#' Opens file for editing the RStudio drop-down project list so individual projects can be removed from the list.
+#' Opens file for editing the RStudio dropdown project list so individual projects can be removed from the list.
 #'
 #' @param windrive For Windows only, drive where RStudio is installed. Defaults to C.
 #'
