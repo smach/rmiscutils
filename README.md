@@ -137,7 +137,7 @@ oddly does not do.
 are numeric or integers. Uses for loops, so may be slow for large data
 frames.
 
-*numbers\_with\_commas* – easily turn character strings containing
+*number\_with\_commas* – easily turn character strings containing
 numbers with commas into numbers.
 
 *read\_textfile* – read a text file into an R variable as a single
